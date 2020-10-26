@@ -1,0 +1,65 @@
+create database TCCFASTFOOD;
+use TCCFASTFOOD;
+
+
+create table tb_login(
+id_login int primary key auto_increment not null,
+ds_email varchar(100) not null,
+ds_senha varchar(20) not null
+);
+
+
+create table tb_cardapio(
+id_cardapio int primary key auto_increment not null,
+vl_preco decimal not null,
+nm_lanche varchar(100) not null,
+nm_bebida varchar(100) not null,
+nm_acompanhamento varchar(100) not null
+);
+
+
+create table tb_cardapio_combo(
+id_combo int primary key auto_increment not null,
+vl_preco decimal not null,
+nm_lanche varchar(100) not null,
+nm_bebida varchar(100) not null,
+nm_acompanhamento varchar(100) not null
+);
+
+
+create table tb_pedido(
+id_pedido int primary key auto_increment not null,
+id_login int not null,
+id_cardapio int,
+id_combo int,
+vl_preco decimal,
+foreign key (id_login) references tb_login(id_login) on delete cascade,
+foreign key (id_cardapio) references tb_cardapio(id_cardapio) on delete cascade
+);
+
+
+create table tb_cliente(
+id_cliente int primary key auto_increment not null,
+id_login int not null,
+nm_cliente varchar(100) not null,
+dt_nascimento date not null,
+ds_endereco varchar(100) not null,
+ds_CPF varchar(20) not null,
+nr_celular varchar(20) not null,
+nr_telefone_fixo varchar(20),
+foreign key (id_login) references tb_login(id_login) on delete cascade
+);
+
+
+create table tb_funcionario(
+if_funcionario int primary key auto_increment not null,
+id_login int not null,
+nm_funcionario varchar(100) not null,
+dt_nascimento date not null,
+ds_rg varchar(20) not null,
+ds_CPF varchar(20) not null,
+ds_endereco varchar(100) not null,
+nr_celular varchar(20) not null,
+nr_telefone_fixo varchar(20),
+foreign key (id_login) references tb_login(id_login) on delete cascade
+);
