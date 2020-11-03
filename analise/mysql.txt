@@ -1,11 +1,14 @@
-create database TCCFASTFOOD;
-use TCCFASTFOOD;
+create database TCC2020fastfood;
+use TCC2020fastfood;
+
+
 
 
 create table tb_login(
 id_login int primary key auto_increment not null,
 ds_email varchar(100) not null,
-ds_senha varchar(20) not null
+ds_senha varchar(20) not null,
+ds_perfil varchar(100) not null
 );
 
 
@@ -63,3 +66,30 @@ nr_celular varchar(20) not null,
 nr_telefone_fixo varchar(20),
 foreign key (id_login) references tb_login(id_login) on delete cascade
 );
+
+
+select * from tb_cliente;
+select * from tb_login;
+
+
+
+
+insert into tb_login(ds_email, ds_senha, ds_perfil)
+            values('matheus023@gmail.com','12345','cliente');
+            
+insert into tb_login(ds_email, ds_senha, ds_perfil)
+             values('marcella@gmail.com','marc123','cliente');
+             
+insert into tb_login(ds_email, ds_senha, ds_perfil)
+             values('lucass0102@gmail.com','luc123','Gerente');
+             
+insert into tb_login(ds_email, ds_senha, ds_perfil)
+               values('juliano123@gmail.com','ju123','funcionario');
+
+
+
+insert into tb_cliente(id_login, nm_cliente, dt_nascimento, ds_endereco, ds_CPF, nr_celular, nr_telefone_fixo)
+               values(1,'Marcella Souza','1998-05-05','Avenida Santo Amaro','008.799.038-56','(55)11 98242-2525','');
+
+insert into tb_cliente(id_login, nm_cliente, dt_nascimento, ds_endereco, ds_CPF, nr_celular, nr_telefone_fixo)
+               values(2,'Matheus Lima','2000-08-01','Rua Tuiuti, 425','954.470.240-72','(55)11 99189-5151','');
