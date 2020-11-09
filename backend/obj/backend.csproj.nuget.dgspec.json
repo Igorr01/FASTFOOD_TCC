@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Luciano\\Documents\\Info B - Igor\\FastFoodTCC\\FASTFOOD_TCC\\backend\\backend.csproj": {}
+    "C:\\Users\\Luciano\\Documents\\Info B - Igor\\2020TCCfastfood\\FASTFOOD_TCC\\backend\\backend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Luciano\\Documents\\Info B - Igor\\FastFoodTCC\\FASTFOOD_TCC\\backend\\backend.csproj": {
+    "C:\\Users\\Luciano\\Documents\\Info B - Igor\\2020TCCfastfood\\FASTFOOD_TCC\\backend\\backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Luciano\\Documents\\Info B - Igor\\FastFoodTCC\\FASTFOOD_TCC\\backend\\backend.csproj",
+        "projectUniqueName": "C:\\Users\\Luciano\\Documents\\Info B - Igor\\2020TCCfastfood\\FASTFOOD_TCC\\backend\\backend.csproj",
         "projectName": "backend",
-        "projectPath": "C:\\Users\\Luciano\\Documents\\Info B - Igor\\FastFoodTCC\\FASTFOOD_TCC\\backend\\backend.csproj",
+        "projectPath": "C:\\Users\\Luciano\\Documents\\Info B - Igor\\2020TCCfastfood\\FASTFOOD_TCC\\backend\\backend.csproj",
         "packagesPath": "C:\\Users\\Luciano\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Luciano\\Documents\\Info B - Igor\\FastFoodTCC\\FASTFOOD_TCC\\backend\\obj\\",
+        "outputPath": "C:\\Users\\Luciano\\Documents\\Info B - Igor\\2020TCCfastfood\\FASTFOOD_TCC\\backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Luciano\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -37,6 +37,20 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
