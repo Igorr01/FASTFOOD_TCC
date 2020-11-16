@@ -1,7 +1,5 @@
 body {
     margin:0;
-    background-image: url(../Inicio/planodefundoinicio2.jpg);
-    background-repeat: no-repeat;
     }
 
 ul {
@@ -64,7 +62,7 @@ li a:hover:not(.active) {
 
   .titulocadastro {
       font-weight: bolder;
-      font-size: 40px;
+      font-size: 35px;
   }
 
 
@@ -73,7 +71,7 @@ li a:hover:not(.active) {
 
   .containercardapio {
       height: 45vh; width: auto;
-      background-image: url(../Inicio/planodefundoCARDAPIO.jpg);
+      background-image: url(../Inicio/planodefundocardapio2.jpg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: 100%;
@@ -87,7 +85,7 @@ li a:hover:not(.active) {
       color: white;
       margin-right: 100px; margin-top: 80px;
       font-weight: bolder;
-      font-size: 40px;
+      font-size: 35px;
   }
 
   .minicontainercardapio {
@@ -95,5 +93,18 @@ li a:hover:not(.active) {
       align-items: flex-start;
       justify-content: flex-end;
       flex-direction: column;
+  }
+
+
+
+
+  .containerconsultar {
+    margin-top: 100px; width: auto; height: 150px;
+    margin-left: 100px; margin-bottom: 50px;
+  }
+
+  .tituloconsulta {
+    font-weight: bolder;
+    font-size: 35px;
   }
 

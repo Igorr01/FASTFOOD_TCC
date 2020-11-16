@@ -23,6 +23,11 @@ export default function Inicio() {
                         <button class="button button2">Nosso Cardapio</button>
                     </div>
                 </div>
+
+                <div className="containerconsultar">
+                    <h1 className="tituloconsulta">Consulte seu cadastro</h1>
+                    <button class="button button2">Nosso Cardapio</button>
+                </div>
             </div>
 
         </div>
