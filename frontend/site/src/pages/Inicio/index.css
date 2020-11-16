@@ -1,6 +1,8 @@
 body {
     margin:0;
-}
+    background-image: url(../Inicio/planodefundoinicio2.jpg);
+    background-repeat: no-repeat;
+    }
 
 ul {
   list-style-type: none;
