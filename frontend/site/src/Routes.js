@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, BrowserRouter, Route } from 'react-router-dom';
 
-import Inicio from './pages/Inicio';
+import Inicio from './pages/Menu';
 import Cadastrar from './pages/Cadastrar';
 import Consultar from './pages/Consultar';
 

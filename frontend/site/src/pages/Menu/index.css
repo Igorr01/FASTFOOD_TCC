@@ -1,0 +1,76 @@
+header {
+    height: 10vh; width: auto;
+    background-color: orangered;
+}
+
+.containercadastro {
+    height: 65vh; width: auto;
+    background-image: url(../Menu/planodefundocadastro.jpg);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastro {
+    height: 95%; width: 500px;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+.containercardapio {
+    height: 25vh; width: auto;
+
+    display: flex;
+    justify-content: center;
+}
+.titulocardapio {
+    margin-top: 100px;
+    font-size: 50px;
+}
+
+
+.containerbotao {
+    height: 10vh; width: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+.button {
+    background-color: #008CBA; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .button2 {background-color: #008CBA;}
+
+
+
+  .anuncio {
+      height: 50vh; width: auto;
+
+  }
+
+
+
+  .rodape {
+      height: 15vh; width: auto;
+      background-color: orangered;
+  }

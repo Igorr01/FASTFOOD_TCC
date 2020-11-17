@@ -1,0 +1,35 @@
+header {
+    height: 10vh; width: auto;
+    background-color: orangered;
+}
+
+
+.containerconsultar {
+    margin-top: 15vh;
+    height: 40vh; width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.tituloconsultar {
+    font-size: 40px;
+}
+
+.containerbotao {
+    height: 15vh; width: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-top: 10vh;
+}
+#botaovoltar {
+    margin-right: 10vh;
+}
+
+
+.rodape {
+    height: 15vh; width: auto;
+    background-color: orangered;
+    margin-top: 30px;
+}
